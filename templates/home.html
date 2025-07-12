@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to FarmMitra</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f2f9f3;
+    }
+    .navbar {
+      background-color: #28a745;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      width: 100%;
+      height: 400px;
+      background: url('{{ url_for('static', filename='image/istockphoto-497627966-1024x1024.jpg') }}') no-repeat center center/cover;
+      position: relative;
+    }
+    .hero h1 {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .content ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div><strong>FarmMitra</strong></div>
+    <div>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('crop_predict') }}">Crop</a>
+      <a href="{{ url_for('disease_detect') }}">Disease</a>
+      <a href="{{ url_for('chatbot') }}">Chatbot</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Empowering Farmers with AI 🌱</h1>
+  </div>
+
+  <div class="content">
+    <h2>Welcome to FarmMitra</h2>
+    <p>FarmMitra is your smart assistant for farming decisions. It helps you:</p>
+    <ul>
+      <li>🌾 Recommend crops based on soil & weather</li>
+      <li>🦠 Detect plant diseases via image analysis</li>
+      <li>💬 Ask farming questions to an AI chatbot</li>
+    </ul>
+    <p>Use the navigation above to explore!</p>
+  </div>
+</body>
+</html>

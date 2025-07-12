@@ -36,5 +36,3 @@ while True:
 
 
 
-# !unzip -o "/content/drive/MyDrive/projects/FarmMitra/data/archive (9).zip" -d "/content/dataset"
-# !unzip -o "/content/dataset/archive (8).zip" -d "/content/dataset"
