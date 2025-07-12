@@ -11,7 +11,7 @@ VENV/
 .venv/
 
 # VS Code settings
-# .vscode/
+.vscode/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -34,24 +34,24 @@ Thumbs.db
 # Compiled models or data
 *.pkl
 *.h5
-# *.joblib
+*.joblib
 
 # Large files or archives
-# *.zip
-# *.tar.gz
-# *.rar
+*.zip
+*.tar.gz
+*.rar
 
 # node_modules (if using React or JS frontend)
 node_modules/
 
 # Static build
-# build/
-# dist/
+build/
+dist/
 
 # Database files
 *.sqlite3
-# *.db
+*.db
 
 # Image uploads or user data (optional)
-# uploads/
-# media/
+uploads/
+media/
