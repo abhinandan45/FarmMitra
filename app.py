@@ -53,6 +53,7 @@ disease_model = None
 
 try:
     # Load Crop Prediction Model
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     crop_model_path = os.path.join('models', 'crop_prediction_model.pkl')
     crop_model = joblib.load(crop_model_path)
     print(f"Crop prediction model loaded successfully from {crop_model_path}")
