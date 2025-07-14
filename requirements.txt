@@ -7,3 +7,4 @@ Pillow>=11.1.0,<12.0.0
 tensorflow==2.13.0
 google-generativeai==0.3.2
 protobuf==4.25.3
+gunicorn==21.2.0
