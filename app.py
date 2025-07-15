@@ -13,26 +13,12 @@ import base64
 import io
 
 
-# --- Flask App Initialization ---
 app = Flask(__name__)
 
 # # --- Configure Gemini AI Chatbot ---
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-# # API_KEY = "AIzaSyA_eprNsgB-RtxuGMhIlsbwJnHdMHhyRME"  # Replace with your actual API key
-# # genai.configure(api_key=API_KEY)
-
-# gemini_model = genai.GenerativeModel(
-#     model_name="gemini-1.5-flash",
-#     system_instruction=(
-#         "You are an agricultural expert and farming advisor. "
-#         "Provide accurate, location-based, season-aware, and practical farming advice. "
-#         "Reply in friendly and helpful tone. Prefer Hindi if question is in Hindi. "
-#         "Ensure advice is specific to crops like Potato, Tomato, and Bell Pepper."
-#     )
-# )
-
-
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+API_KEY = "AIzaSyBcTLvpG3LKnpAN0Q3bACzuMz-Zoo8K-F0"  # Replace with your actual API key
+genai.configure(api_key=API_KEY)
 
 gemini_model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
@@ -44,8 +30,6 @@ gemini_model = genai.GenerativeModel(
     )
 )
 
-gemini_chat_session = gemini_model.start_chat()
-print("Gemini AI Chatbot configured and ready.")
 
 # --- Load ML Models ---
 crop_model = None
